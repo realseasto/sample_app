@@ -19,6 +19,7 @@ group :test do
   gem "sqlite3", "~> 1.3.6", :require => "sqlite3"
 	gem "rspec"
 	gem "webrat"
+	gem 'spork', '~> 0.9.0.rc'
 end
 
 # Gems used only for assets and not required
