@@ -8,6 +8,7 @@ gem 'rails', '3.2.6'
 # Heroku install patch for postgres as opposed to sqlite
 group :production, :staging do
   gem "pg"
+	gem "watchr"
 end
 
 group :development do
@@ -19,7 +20,8 @@ group :test do
   gem "sqlite3", "~> 1.3.6", :require => "sqlite3"
 	gem "rspec"
 	gem "webrat"
-	gem 'spork', '~> 0.9.0.rc'
+	gem "spork", "~> 0.9.0.rc"
+	gem "watchr"
 end
 
 # Gems used only for assets and not required
