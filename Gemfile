@@ -14,13 +14,14 @@ end
 group :development do
   gem "sqlite3", "~> 1.3.6", :require => "sqlite3"
 	gem "rspec-rails"
+	gem 'annotate', '2.4.1.beta1'
 end
 
 group :test do
   gem "sqlite3", "~> 1.3.6", :require => "sqlite3"
 	gem "rspec"
-	gem "webrat"
-	gem "spork", "~> 0.9.0.rc"
+	gem "webrat", '0.7.1'
+	gem "spork"
 	gem "watchr"
 end
 

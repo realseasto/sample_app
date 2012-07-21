@@ -1,12 +1,13 @@
 SampleApp::Application.routes.draw do
-
+	resources :users
 
 	root :to => "pages#home", :as => 'home'  
 	match '/contact', :to => 'pages#contact', :as => 'contact'
 	match '/about', :to => 'pages#about', :as => 'about'
 	match '/help', :to => 'pages#help', :as => 'help'
 	match '/signup', :to => 'users#new', :as => 'signup'  
-	get "users/new"
+	
+	#get "users/new"
 	#get "pages/home"
   #get "pages/contact"
 	#get "pages/about"
